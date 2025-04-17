@@ -35,7 +35,8 @@
             android:exported="false" />
         <activity
             android:name=".MainActivity2"
-            android:exported="true">
+            android:exported="true"
+            android:theme="@style/Theme.TodoList.NoSplash">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

@@ -9,17 +9,12 @@
     android:gravity="center"
     tools:context=".MainActivity2">
 
-    <ImageView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:src="@drawable/microsoft_todo_svgrepo_com"/>
+  <ImageView
+      android:id="@+id/gif"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+     android:scaleType="fitCenter"
+     android:adjustViewBounds="true"/>
 
-   <TextView
-       android:gravity="center"
-       android:layout_width="match_parent"
-       android:layout_height="wrap_content"
-       android:text="To-Do List"
-       android:textColor="@color/black"
-       android:textSize="80sp"/>
 
 </LinearLayout>

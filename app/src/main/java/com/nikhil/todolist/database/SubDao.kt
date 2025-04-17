@@ -3,6 +3,7 @@ package com.nikhil.todolist.database
 import androidx.room.Dao
 import androidx.room.Insert
 import androidx.room.Query
+import androidx.room.Update
 
 @Dao
 interface SubDao {
@@ -14,4 +15,8 @@ interface SubDao {
 
     @Query("DELETE FROM sub_task WHERE subtaskid = :subtaskId")
     suspend fun deleteSubtask(subtaskId: Int)
+
+    @Update
+    fun updateTask(subtask: Subtask)
+
 }

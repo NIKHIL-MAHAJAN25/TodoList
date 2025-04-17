@@ -18,5 +18,6 @@ data class Subtask (
             @PrimaryKey(autoGenerate = true) val subtaskid:Int=0,
             val title: String,
             val description: String?,
-            val mainTaskRefId: Int
+            val mainTaskRefId: Int,
+            var completed:Boolean?=false
 )

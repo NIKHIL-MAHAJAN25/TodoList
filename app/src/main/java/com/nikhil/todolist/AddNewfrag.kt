@@ -89,7 +89,7 @@ class AddNewfrag : Fragment() {
             val endDate = binding.etenddate.text.toString().trim()
             if(title.isNotEmpty() && description.isNotEmpty() && startDate.isNotEmpty() && endDate.isNotEmpty() )
             {
-                val newtask=Maintask(title=title, description = description, startDate = startDate, endDate = endDate)
+                val newtask=Maintask(title=title, description = description, startDate = startDate, endDate = endDate, completed = false)
                 lifecycleScope.launch(Dispatchers.IO) {
                     database.Maindao().insertTask(newtask)
                 }

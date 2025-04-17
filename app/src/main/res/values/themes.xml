@@ -6,4 +6,10 @@
     </style>
 
     <style name="Theme.TodoList" parent="Base.Theme.TodoList" />
+    <style name="Theme.TodoList.NoSplash" parent="Theme.AppCompat.Light.NoActionBar">
+
+        <item name="windowSplashScreenAnimatedIcon">@null</item>
+        <item name="windowSplashScreenBackground">@android:color/transparent</item>
+        <item name="postSplashScreenTheme">@style/Theme.TodoList</item>
+    </style>
 </resources>
